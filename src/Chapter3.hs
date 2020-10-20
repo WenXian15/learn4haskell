@@ -1227,9 +1227,7 @@ instance Fighter Knight where
     isDead k = kHealth k <= 0
 
 data FightResult a b
-    = FirstWins a 
-    | SecondWins b
-    | BothDead a b
+    = FirstWins a | SecondWins b | BothDead a b
 
 fightWinner :: (Fighter a, Fighter b) => a -> b -> Bool -> FightResult a b
 fightWinner fighterA fighterB firstFighttersTurn
