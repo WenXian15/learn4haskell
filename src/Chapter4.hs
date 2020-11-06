@@ -642,6 +642,7 @@ instance Monad List where
 So far we've been talking only about instances and use cases of
 different typeclasses. But one more cool thing we haven't discussed
 yet is the ability to implement functions polymorphic over the
+
 context. Let's say that you have two boolean values inside some
 contexts, and you want to apply the logical AND operation on them. But
 you don't know the context! It can be 'Maybe', or 'Either' or 'List',
